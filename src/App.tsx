@@ -1,4 +1,4 @@
-import OrderDetail from "./components/order/order-detail";
+import { OrderDetail } from "./components/Order";
 
 const App = () => {
   return <OrderDetail />;

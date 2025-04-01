@@ -1,19 +1,19 @@
 import { Ref } from "react";
-import { TInvoiceDetail } from "../../types/invoice";
-import { TBusiness } from "../../types/account";
+import { TInvoiceDetail } from "../types/invoice";
+import { TBusiness } from "../types/account";
 import {
   convertTimestampToDateDashString,
   hh_mm,
   parseInvoiceStatus,
   parseOrderStatus,
-} from "../../utils/libs";
+} from "../utils/libs";
 type Props = {
   invoiceDetailData?: TInvoiceDetail;
   businessData?: TBusiness;
   contentRef?: Ref<HTMLDivElement>;
 };
 
-const OrderDetail = ({
+export const OrderDetail = ({
   invoiceDetailData,
   businessData,
   contentRef,
@@ -477,5 +477,3 @@ const OrderDetail = ({
     </div>
   );
 };
-
-export default OrderDetail;
